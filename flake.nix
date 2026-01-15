@@ -18,7 +18,7 @@
         combine [
           stable.toolchain
           # add additional compilation targets
-          #targets.wasm32-unknown-unknown.stable.rust-std
+          targets.wasm32-unknown-unknown.stable.rust-std
         ];
       nvim = nixvimConfig.packages."${system}".default.extend {
         plugins = {
@@ -33,13 +33,15 @@
         buildInputs = # bash
           [ nvim ];
         nativeBuildInputs = with pkgs; [
-          rustc
           fpkgs
           cargo
           gcc
           rustfmt
           rustup
           clippy
+          lld
+          trunk
+          leptosfmt
         ];
         RUST_SRC_PATH = "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
 
