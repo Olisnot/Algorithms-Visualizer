@@ -1,3 +1,4 @@
+mod chart;
 mod quicksort;
 use leptos::prelude::*;
 

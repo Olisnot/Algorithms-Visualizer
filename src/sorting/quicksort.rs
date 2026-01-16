@@ -1,4 +1,4 @@
-use crate::chart::BarChart;
+use super::chart::BarChart;
 use async_recursion::async_recursion;
 use gloo_timers::future::TimeoutFuture;
 use leptos::prelude::*;

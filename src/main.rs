@@ -1,4 +1,3 @@
-mod chart;
 mod searching;
 mod sorting;
 use leptos::mount::mount_to_body;
