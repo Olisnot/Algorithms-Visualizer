@@ -1,6 +1,9 @@
+mod quicksort;
 use leptos::prelude::*;
+
+use quicksort::QuicksortView;
 
 #[component]
 pub fn SortingView() -> impl IntoView {
-    view! { <p>"Placeholder for sorting algorithms in a mod rs file."</p> }
+    view! { <QuicksortView/> }
 }
