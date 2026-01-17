@@ -59,7 +59,7 @@ fn App() -> impl IntoView {
                 })
                 .collect_view()}
         </div>
-        <div class="tab-content">
+        <div>
             {move || {
                 tabs
                     .iter()

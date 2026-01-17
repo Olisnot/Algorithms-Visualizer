@@ -62,7 +62,7 @@ pub fn BarChart(data: ReadSignal<Vec<f64>>, domain: (f64, f64)) -> impl IntoView
     });
 
     view! {
-      <svg width=w height=h>
+      <svg class="tab-content" width=w height=h>
         <g>
           {move || {
             bars.get()
