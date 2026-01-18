@@ -165,6 +165,17 @@ body {
   outline: none;
 }
 
+.input[type="number"] {
+  width: 120px;
+}
+
+.input[type="number"]::-webkit-inner-spin-button,
+.input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+  background: var(--base02);
+  border-left: 1px solid var(--base03);
+}
+
 .input:focus,
 .select:focus,
 .textarea:focus {
